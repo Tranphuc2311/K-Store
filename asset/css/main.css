@@ -1,0 +1,317 @@
+/* header */
+.home {
+  background-image: url(fw7.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home__header {
+  border-bottom: 2px solid rgb(90, 50, 50);
+}
+.home__header-item {
+  display: flex;
+}
+/* logo */
+.home__header-logo {
+  display: grid;
+  position: relative;
+  padding-left: 20px;
+}
+.home__header-item-logo {
+  width: 150px;
+}
+.home__header-logo-text {
+  font-family: "Pacifico", cursive;
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  text-decoration: none;
+  text-align: center;
+  top: -20px;
+}
+/* menu1 */
+.home__header-menu1 {
+  padding-left: 78px;
+}
+.home__header-menu1-item {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-inline-start: 80px;
+  margin-top: 0;
+}
+.home__header-menu1-item-txt {
+  margin: 20px 30px 0 0;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: rgba(70, 3, 29, 0.3);
+  border-radius: 3px;
+}
+.home__header-menu1-item-txt:hover {
+  background-color: #d4dade;
+  color: #58595b;
+  border-radius: 5px;
+  animation: ani 1.2s linear;
+  cursor: pointer;
+}
+@keyframes ani {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+/* Mục tìm kiếm */
+.home__header-menu1-search {
+  position: absolute;
+  top: 17%;
+  left: 48.8%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(335, 91%, 9%, 0.9);
+  border-radius: 30px;
+  width: 560px;
+  height: 50px;
+}
+.home__header-menu1-search-input {
+  outline: none;
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  background-color: transparent;
+  color: var(--white-color);
+  text-align: start;
+  font-size: 2rem;
+  border: none;
+  padding: 0;
+  float: right;
+  transition: 0.4s;
+  width: 450px;
+}
+.home__header-menu1-search-btn {
+  float: right;
+  width: 40px;
+  right: 40px;
+  color: var(--white-color);
+  font-size: 2.5rem;
+  margin: 10px;
+  border-radius: 50%;
+}
+.home__header-menu1-search-btn:hover {
+  transition: 0.01s all;
+  color: #51eaff;
+  font-size: 3rem;
+}
+/* menu2 */
+.home__header-menu2-item {
+  display: flex;
+  padding: 0;
+  margin-left: 50px;
+}
+.home__header-menu2-item-elm {
+  list-style: none;
+  margin-left: 21px;
+}
+.home__header-menu2-item-elm-icon,
+.home__header-menu2-item-elm-text {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.home__header-menu2-item-elm-text:hover {
+  color: var(--hover-color);
+  border-bottom: 1px solid #333;
+  transition: 0.3s ease-in-out;
+}
+/* shiper img */
+.home__header-menu2-shipper-img {
+  position: absolute;
+  top: 40px;
+  right: 150px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  animation: bike 3s linear infinite;
+  border-bottom: 2px solid black;
+}
+@keyframes bike {
+  100% {
+    transform: translatex(120px);
+  }
+}
+.home__header-menu2-follow {
+  position: absolute;
+  bottom: 575px;
+  right: 2.4%;
+  
+}
+.home__header-menu2-follow-text {
+  font-size: 1.6rem;
+  text-decoration: none;
+  background-color: blanchedalmond;
+  border-radius: 4px;
+  padding: 10px;
+  color: var(--text-color);
+  animation: gradients 1s infinite;
+}
+@keyframes gradients {
+  0% {
+    background-color: #00dfc8;
+  }
+  25% {
+    background-color: #00cf91;
+  }
+  75% {
+    background-color: #17f1d7;
+  }
+  50% {
+    background-color: #45d09e;
+  }
+  100% {
+    background-color: #17f1d7;
+  }
+}
+/* body navbar menu */
+
+.home__body-menu-list {
+  position: absolute;
+  list-style: none;
+  padding: 15px 0px 0;
+  margin: 0;
+  height: 545px;
+  width: 270px;
+  background-color: hsl(21, 90%, 85%, 0.8);
+  border-radius: 8px;
+}
+.home__body-menu-list-item {
+  border-top: 1px solid rgba(#242240);
+  border-bottom: 1px solid #58595b;
+  cursor: pointer;
+}
+.home__body-menu-list-item:first-child {
+  border-bottom: none;
+}
+.home__body-menu-list-item-txt {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.8rem;
+  line-height: 50px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  top: 20px;
+  transition: 0.4s;
+}
+.home__body-menu-list-item-txt-spc {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+  font-size: 2rem;
+  line-height: 25px;
+}
+.home__body-menu-list-item-txt-spc,
+.home__body-menu-list-item-icon {
+  color: #F85C50;
+}
+.home__body-menu-list-item-icon {
+  margin-left: 10px;
+  font-size: 2.4rem;
+}
+.home__body-menu-list-item:hover .home__body-menu-list-item-txt {
+  padding-left: 20px;
+  color: var(--hover-color);
+}
+.home__body-mess {
+  width: 1186px;
+  height: 604px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(245, 236, 242);
+  top: 185.5px;
+  position: absolute;
+  align-items: center;
+  left: 271px;
+  text-align: center;
+  padding: 0 20px 0;
+}
+.home__body-mess-txt {
+  margin-top: 20px;
+  top: 116px;
+  position: relative;
+}
+.home__body-mess-text {
+  font-size: 4rem;
+  font-weight: 550;
+}
+.home__body-mess-text2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+/* footer */
+.fullsize {
+  width: 100%;
+}
+.footer__top-list {
+  width: 20%;
+}
+.footer__top {
+  display: flex;
+  justify-content: center;
+  background-color: #e5af9e;
+  border-top: 1.5px solid rgb(90, 50, 50);
+}
+.footer__top-ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+.footer__top-ul:first-child {
+  padding-left: 100px;
+}
+.footer__top-tools-li {
+}
+.footer__top-tools-li-text1 {
+  text-transform: uppercase;
+  font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  color: #58595b;
+  font-size: 1.4rem;
+}
+.footer__top-tools-li-text {
+  text-decoration: none;
+  color: #808285;
+  cursor: pointer;
+}
+.footer__top-tools-li-text:hover{
+  color: #fff;
+}
+.footer__top-tools-li-icon {
+  margin-right: 5px;
+}
+
+.footer__bottom,
+.footer__bottom-text {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #c29d91;
+  color: #58595b;
+}

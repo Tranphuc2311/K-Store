@@ -1,0 +1,17 @@
+:root {
+  --white-color: #fff;
+  --text-color:#F2F8FD;
+  --primary-color:linear-gradient(0,#E5F0FF,#F2F8FD,#D7FFFE);
+  --border-color: #dbdbdb;
+  --hover-color: #F2F8FD;
+}
+*
+    {
+       box-sizing: border-box;
+    }
+html {
+  font-family: fa5-proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 60.5%;
+  line-height: 1.6rem;
+  
+}
